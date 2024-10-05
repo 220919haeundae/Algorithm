@@ -1,6 +1,5 @@
 class Solution {
     public String solution(String s, int n) {
-        String answer = "";
         StringBuilder sb = new StringBuilder();
         
         for(int i = 0; i < s.length(); i++) {
@@ -20,15 +19,8 @@ class Solution {
                         sb.append((char)(s.charAt(i)+n-26));
                     }
                 }
-                
-                
-                
-                
             }
         }
-        
-        answer = sb.toString();
-        System.out.println(answer);
-        return answer;
+        return sb.toString();
     }
 }
