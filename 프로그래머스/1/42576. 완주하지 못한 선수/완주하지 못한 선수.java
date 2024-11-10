@@ -13,11 +13,13 @@ class Solution {
             map.put(name, map.get(name) - 1);
         }
         
-        for(String name : map.keySet()) {
-            if(map.get(name) > 0) {
-                return name;    
+        for(Map.Entry<String, Integer> entry : map.entrySet()) {
+            if(entry.getValue() > 0) {
+                return entry.getKey();
             }
         }
+        
+       
         
         return "";
     }
